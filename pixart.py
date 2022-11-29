@@ -88,8 +88,26 @@ def get_hex_color():
 def draw_random_rectangle(p):
     draw_rectangle(random.randint(0,19),random.randint(0,19),random.randint(0,19),random.randint(0,19),p,get_hex_color())
 
-def draw_array(p,array):
+def draw_list(p,list):
     i=0
+    if len(list) == 400:
+        j=0
+        i=0
+        while j < 20:
+            while i < 20:
+                if list[j*10+i] != 0:
+                    move(i,j,p)
+                    draw_pixel(p,list[j*10+i])
+                    i+=1
+                j+=1
+
+
+def build_list():
+    i = 0
+                
+    
+
+
 
 
 def main():
