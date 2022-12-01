@@ -2,12 +2,14 @@ import turtle
 import math
 import random
 
+# Sets pen to black and goes to top left of coordinate grid
 def initalize(p):
     turtle.speed(0)
     turtle.pencolor("black")
     turtle.penup()
     turtle.goto(-10*p,10*p)
 
+# Draws a pixel based on given color and universal pixel size
 def draw_pixel(p,color):
     turtle.pendown()
     turtle.fillcolor(color)
@@ -19,6 +21,7 @@ def draw_pixel(p,color):
         i = i+1
     turtle.end_fill()
     turtle.penup()
+
 
 def draw_grid(p):
     initalize(p)
@@ -104,7 +107,7 @@ def draw_list(p,list):
 
 def build_list():
     i = 0
-                
+              
     
 
 
